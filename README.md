@@ -6,6 +6,8 @@ It uses tools, can read web-pages, has a short-term and a long-term memory, can 
 
 It attempts to solve complex tasks as a team in a chaotic, unorganized manner.
 
+See a [sample output](sample-output.md) to know what you can expect.
+
 
 ## Installation
 
