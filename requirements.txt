@@ -1,0 +1,11 @@
+python-dotenv==1.0.1
+tqdm==4.67.0
+openai==1.54.4
+transformers==4.46.2
+pydantic==2.9.2
+chromadb==0.5.18
+directory_tree==1.0.0
+duckduckgo_search==6.3.5
+trafilatura==1.12.2
+PyPDF2==2.10.5
+scholarly==1.7.11
