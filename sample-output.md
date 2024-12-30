@@ -1,4 +1,4 @@
-LLM: qwen2.5-coder-14b-48k:latest
+LLM: qwen2.5-coder-14b-48k:latest\
 Date: 12/26/2024, 15:54:11
 
 ***** TOPIC *****
