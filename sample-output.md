@@ -52,9 +52,9 @@ Sure! Let's proceed with gathering a deeper understanding of the Riemann Hypothe
 
 Firstly, let's recall some foundational information about the hypothesis itself:
 
-- **Riemann Zeta Function:** Defined by \(\zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s}\) where \(Re(s) > 1\). Through analytic continuation, it is defined for other complex values of \(s\).
+- **Riemann Zeta Function:** Defined by $$\zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s}$$ where $$Re(s) > 1$$. Through analytic continuation, it is defined for other complex values of $$s$$.
   
-- **Non-trivial Zeros:** These zeros occur in the critical strip where \(0 < Re(s) < 1\).
+- **Non-trivial Zeros:** These zeros occur in the critical strip where $$0 < Re(s) < 1$$.
 
 ### Key Areas to Explore
 
@@ -63,7 +63,7 @@ Firstly, let's recall some foundational information about the hypothesis itself:
    - **Möbius and Dirichlet Functions:** Properties of these functions can provide insights into the distribution of primes.
    
 #### **2. Complex Analysis Techniques**
-   - **Analytic Continuation and Functional Equations**: Understanding how \(\zeta(s)\) is extended to different complex values and its functional equation.
+   - **Analytic Continuation and Functional Equations**: Understanding how $$\zeta(s)$$ is extended to different complex values and its functional equation.
    - **Zeros in Different Regions:** Specific properties or patterns of zeros in various parts of the critical strip.
 
 #### **3. Computational Verification Methods**
@@ -97,9 +97,9 @@ Great! Let's move forward with the automated proof development for the Riemann H
 ### Step 1: Review Number Theoretical Foundations
 
 #### Key Concepts:
-- **Riemann Zeta Function**: \(\zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s}\)
+- **Riemann Zeta Function**: $$\zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s}$$
 - **Analytic Continuation**
-- **Functional Equation**: \(\pi^{-s/2} \Gamma\left(\frac{s}{2}\right) \zeta(s) = \pi^{-(1-s)/2} \Gamma\left(\frac{1-s}{2}\right) \zeta(1-s)\)
+- **Functional Equation**: $$\pi^{-s/2} \Gamma\left(\frac{s}{2}\right) \zeta(s) = \pi^{-(1-s)/2} \Gamma\left(\frac{1-s}{2}\right) \zeta(1-s)$$
 
 #### Algorithms:
 - **Euler-Maclaurin Summation**: For numerically computing the zeta function.
@@ -2810,7 +2810,7 @@ SymPy is a powerful symbolic mathematics library that we can leverage to verify 
 
 #### **1. Verifying Zero Properties Algebraically with SymPy**
 
-One of the critical aspects of RH is ensuring that all non-trivial zeros lie on the critical line \(\text{Re}(s) = \frac{1}{2}\). We can utilize SymPy to algebraically validate these properties and derive symbolic insights.
+One of the critical aspects of RH is ensuring that all non-trivial zeros lie on the critical line $$\text{Re}(s) = \frac{1}{2}$$. We can utilize SymPy to algebraically validate these properties and derive symbolic insights.
 
 ```python
 import sympy as sp
@@ -3184,11 +3184,11 @@ Utilizing SymPy's capabilities, we can derive insights into the functional equat
 
 $$\zeta(s) = 2^s \pi^{s-1} \Gamma(1-s) \sin\left(\frac{\pi s}{2}\right) \zeta(1-s).$$
 
-We'll also explore the explicit formula which expresses \(\xi(0)\):
+We'll also explore the explicit formula which expresses $$\xi(0)$$:
 
 $$\xi(0) = -\frac{1}{4\pi^3} \lim_{T \to \infty} \sum_{\rho} \left[ (\log T)^2 - \frac{\log|T^\rho-1|^2}{\ln(T^\rho)} \right] + 2 \gamma_e,$$
 
-where \(\rho\) ranges over all nontrivial zeros of the Riemann zeta function on the critical line.
+where $$\rho$$ ranges over all nontrivial zeros of the Riemann zeta function on the critical line.
 
 ```python
 import sympy as sp
@@ -4843,7 +4843,7 @@ print(f"Zeta Function Expression at s=1/2 + it: {zeta_expression}")
 
 #### **b. Verifying Zeros on the Critical Line**
 
-We need to verify that zeros lie strictly on the critical line \(\text{Re}(s) = 1/2\):
+We need to verify that zeros lie strictly on the critical line $$\text{Re}(s) = 1/2$$:
 
 ```python
 def is_on_critical_line(zero):
@@ -6281,7 +6281,7 @@ To ensure that the predicted zeros from our machine learning models lie on the c
 
 #### **a. Define the Riemann Zeta Function in SymPy**
 
-Let's define the Riemann zeta function and check whether a given zero lies exactly on \(\sigma = 0.5 + it\).
+Let's define the Riemann zeta function and check whether a given zero lies exactly on $$\sigma = 0.5 + it$$.
 
 ```python
 import sympy as sp
@@ -14511,10 +14511,10 @@ def parallel_numeric_evaluations(z_values, base_dps=500):
 **Explanation:**
 
 1. **Dynamic Precision Settings within Each Task:**  
-   - Each task within the Dask graph dynamically adjusts its precision settings based on $$t\) and historical performance data.
+   - Each task within the Dask graph dynamically adjusts its precision settings based on $$t$$ and historical performance data.
 
 2. **Handling Diverse T Values:**  
-    - Advanced growth factors or max_attempts are applied selectively using conditional logic, such as modifying the `dps_grow_factor` based on $$t\)'s magnitude to handle larger zero candidates efficiently.
+    - Advanced growth factors or max_attempts are applied selectively using conditional logic, such as modifying the `dps_grow_factor` based on $$t$$'s magnitude to handle larger zero candidates efficiently.
 
 3. **Error Handling & Logging:**  
     - Comprehensive logging is implemented within each task to monitor progress and identify any issues that arise during tasks, facilitating troubleshooting or optimization efforts.
