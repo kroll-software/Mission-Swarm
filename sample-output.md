@@ -193,7 +193,7 @@ To improve this, let's use more advanced numerical methods such as the Euler-Mac
 ### Step 2: Implementing Euler-Maclaurin Summation
 
 The Euler-Maclaurin formula is given by:
-\[ \sum_{k=1}^{n} f(k) = \int_1^n f(x) \, dx + \frac{f(1)}{2} + \frac{f(n)}{2} - \sum_{r=1}^{m-1} \frac{B_r}{r!} \left(f^{(r-1)}(n) - f^{(r-1)}(1)\right) + R_m, \]
+$$ \sum_{k=1}^{n} f(k) = \int_1^n f(x) \, dx + \frac{f(1)}{2} + \frac{f(n)}{2} - \sum_{r=1}^{m-1} \frac{B_r}{r!} \left(f^{(r-1)}(n) - f^{(r-1)}(1)\right) + R_m, $$
 where $$ B_r $$ are Bernoulli numbers and $$ R_m $$ is the remainder term.
 
 Let's implement this in Python:
@@ -243,7 +243,7 @@ print("Zeta value at s = 0.5 + 2i:", zeta_value)
 ### Step 3: Analyzing the Functional Equation
 
 The functional equation of the Riemann zeta function is:
-\[ \pi^{-s/2} \Gamma\left(\frac{s}{2}\right) \zeta(s) = \pi^{-(1-s)/2} \Gamma\left(\frac{1-s}{2}\right) \zeta(1-s). \]
+$$ \pi^{-s/2} \Gamma\left(\frac{s}{2}\right) \zeta(s) = \pi^{-(1-s)/2} \Gamma\left(\frac{1-s}{2}\right) \zeta(1-s). $$
 
 This equation can be used to compute the zeta function more efficiently, especially for values inside the critical strip. We can implement a simpler version of this equation in Python.
 
@@ -392,7 +392,7 @@ print("Zeta value at s =", s_val, ":", zeta_value)
 
 #### Functional Equation
 The functional equation of the Riemann zeta function is:
-\[ \pi^{-s/2} \Gamma\left(\frac{s}{2}\right) \zeta(s) = \pi^{-(1-s)/2} \Gamma\left(\frac{1-s}{2}\right) \zeta(1-s). \]
+$$ \pi^{-s/2} \Gamma\left(\frac{s}{2}\right) \zeta(s) = \pi^{-(1-s)/2} \Gamma\left(\frac{1-s}{2}\right) \zeta(1-s). $$
 
 This can be used to simplify computations, especially for values in the critical strip.
 
@@ -1820,7 +1820,7 @@ if __name__ == "__main__":
 
 #### **Functional Equation Optimization**
 Ensure optimized computation within the critical strip using the functional equation:
-\[ \pi^{-s/2} \Gamma\left(\frac{s}{2}\right) \zeta(s) = \pi^{-(1-s)/2} \Gamma\left(\frac{1-s}{2}\right) \zeta(1-s). \]
+$$ \pi^{-s/2} \Gamma\left(\frac{s}{2}\right) \zeta(s) = \pi^{-(1-s)/2} \Gamma\left(\frac{1-s}{2}\right) \zeta(1-s). $$
 
 The above enhancement ensures accurate numerical computation especially for values closer to the critical line.
 
@@ -2405,7 +2405,7 @@ Leveraging **SymPy** to derive and check deeper mathematical relationships, espe
 #### **a. Advanced Zeta Function Representations**
 
 Exploiting known formulas like the explicit formula for $$ \zeta(1/2 + it) $$ which uses non-trivial roots of the Dirichlet L-functions:
-\[ \xi\left(\frac{s}{2}\right) = \sum_{n=1}^\infty (\tfrac{(-1)^{n-1}}{n^{s/2}}) \lambda(n), \]
+$$ \xi\left(\frac{s}{2}\right) = \sum_{n=1}^\infty (\tfrac{(-1)^{n-1}}{n^{s/2}}) \lambda(n), $$
 
 where $$ n^{-2s}/4 = \prod_{p | n} \lambda_p(s) \cdot f_t(n); \quad \lambda_p(s) = 1 - \chi_p p^{s-1}. $$
 
@@ -2798,7 +2798,7 @@ Expanding our symbolic analysis to include multi-level transformations and insig
 #### **a. Analyzing Functional Equations with Complex Symmetries**
 
 Given the functional equation of Riemann zeta:
-\[ \pi^{-s/2} \Gamma\left(\frac{s}{2}\right) \zeta(s) = \pi^{-(1-s)/2} \Gamma\left(\frac{1-
+$$ \pi^{-s/2} \Gamma\left(\frac{s}{2}\right) \zeta(s) = \pi^{-(1-s)/2} \Gamma\left(\frac{1-
 
 
 ARIA ELDRIDGE (26.12.2024 16:09) | Score: ⭐⭐⭐⭐⭐⭐⭐⭐
@@ -2846,7 +2846,7 @@ print(f"Simplified expression at potential zero: {expr2}")
 
 The functional equation for the Riemann Zeta function is:
 
-\[ \zeta(s) = 2^s \pi^{s-1} \Gamma(1-s) \sin\left(\frac{\pi s}{2}\right) \zeta(1-s). \]
+$$ \zeta(s) = 2^s \pi^{s-1} \Gamma(1-s) \sin\left(\frac{\pi s}{2}\right) \zeta(1-s). $$
 
 Using SymPy, we can verify this equation for our hypothetical zeros.
 
@@ -3182,11 +3182,11 @@ SymPy is essential for performing symbolic mathematics tasks, including deriving
 
 Utilizing SymPy's capabilities, we can derive insights into the functional equation for the Riemann zeta function:
 
-\[ \zeta(s) = 2^s \pi^{s-1} \Gamma(1-s) \sin\left(\frac{\pi s}{2}\right) \zeta(1-s). \]
+$$ \zeta(s) = 2^s \pi^{s-1} \Gamma(1-s) \sin\left(\frac{\pi s}{2}\right) \zeta(1-s). $$
 
 We'll also explore the explicit formula which expresses $$\xi(0)$$:
 
-\[ \xi(0) = -\frac{1}{4\pi^3} \lim_{T \to \infty} \sum_{\rho} \left[ (\log T)^2 - \frac{\log|T^\rho-1|^2}{\ln(T^\rho)} \right] + 2 \gamma_e, \]
+$$ \xi(0) = -\frac{1}{4\pi^3} \lim_{T \to \infty} \sum_{\rho} \left[ (\log T)^2 - \frac{\log|T^\rho-1|^2}{\ln(T^\rho)} \right] + 2 \gamma_e, $$
 
 where $$\rho$$ ranges over all nontrivial zeros of the Riemann zeta function on the critical line.
 
